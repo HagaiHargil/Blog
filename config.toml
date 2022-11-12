@@ -1,0 +1,49 @@
+baseURL = 'http://example.org/'
+languageCode = 'he'
+title = "Hagai Har-Gil's Blog"
+defaultContentLanguage = "he"
+
+[params]
+title = "Harmless"
+author = "חגי הר-גיל"
+description = "מחשבות"
+profilePicture = "logo.png"
+
+[menu]
+
+  [[menu.main]]
+  name = "בית"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "פוסטים"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "אודות"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+  [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
+    disable = false
+
+[languages]
+	[languages.he]
+	LanguageDirection = "rtl"
+	title = "חגי הר-גיל"
+	weight = 1
+	description = "הבלוג של חגי הר-גיל"
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
